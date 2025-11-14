@@ -1,0 +1,9 @@
+{
+    "name": "com.UlucGungor.HazardSystem",
+    "version": "1.0.0",
+    "displayName": "Hazard Lane - HazardSystem",
+    "description": "Data driven tool for making HazardLane game, porfolio piece that helps designers and coders",
+    "unity": "2021.3",
+    "keywords": ["gamedesign", "technical design", "tools", "Hazard"],
+    "author": {"name": "Uluç Güngör", "email": "gungoruluc@gmail.com"}
+}
