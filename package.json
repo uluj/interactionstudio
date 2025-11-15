@@ -1,8 +1,8 @@
 {
-    "name": "com.ulucgungor.tools.scriptableobject-editor",
+    "name": "com.ulucgungor.tools.interactionstudio",
     "version": "1.0.0",
-    "displayName": "ScriptableObject Editor",
-    "description": "Data driven tool for making HazardLane game, porfolio piece that helps designers and coders",
+    "displayName": "Interaction Authoring Studio",
+    "description": "A Unity Editor extension for designing and prototyping interactive experiences without coding.",
     "unity": "2021.3",
     "keywords": ["gamedesign", "technical design", "tools"],
     "author": {"name": "Uluç Güngör", "email": "gungoruluc@gmail.com"}
