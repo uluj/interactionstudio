@@ -1,0 +1,26 @@
+using UnityEngine;
+// using InteractionStudio.Runtime.Logic; // 'BaseCondition' farklı bir assembly'de ise bu satırı açın
+
+/// <summary>
+/// TEMPLATE: ##SCRIPT_NAME##
+/// This is a new Condition created from the Interaction Authoring Studio.
+/// </summary>
+[CreateAssetMenu(fileName = "Cond_##SCRIPT_NAME##", menuName = "Interaction Studio/Conditions/##SCRIPT_NAME##")]
+public class ##SCRIPT_NAME## : BaseCondition
+{
+    // TODO: Add variables here for the designer to see in the Inspector.
+    // Example: public float RequiredHealth = 50f;
+
+    /// <summary>
+    /// This logic runs when the LogicExecutor checks its conditions.
+    /// </summary>
+    /// <returns>Return 'true' if the condition passes, 'false' otherwise.</returns>
+    public override bool CheckCondition(GameObject contextOwner, GameObject otherObject)
+    {
+        // TODO: Write the Condition logic here.
+        // 'contextOwner' is the object running the LogicExecutor.
+        // 'otherObject' is the (optional) object that triggered it (e.g., the Player).
+        
+        return true;
+    }
+}

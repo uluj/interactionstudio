@@ -1,0 +1,31 @@
+using UnityEngine;
+
+// --- TEMPLATE: ##SCRIPT_NAME## ---
+// Yeni Tetikleyici (Trigger) script'leri oluşturmak için temel şablon.
+// BaseTrigger (Level 2) mimarisiyle uyumludur.
+
+// 'AddComponentMenu' eklemek, tasarımcının bunu Unity'nin 'AddComponent' menüsünde bulmasını sağlar.
+[AddComponentMenu("Interaction Studio/Triggers/##SCRIPT_NAME##")]
+public class ##SCRIPT_NAME## : BaseTrigger
+{
+    // TODO: Bu tetikleyicinin ne zaman çalışacağını belirleyen mantığı yaz.
+    // Örnek: 'OnMouseDown', 'OnTriggerEnter', 'Update' vb.
+
+    // ÖRNEK: Fare tıklamasıyla tetikleme
+    private void OnMouseDown()
+    {
+        // 'TryExecuteActions' metodu, BaseTrigger sınıfından gelir.
+        // Koşulları (IF) kontrol eder ve Eylemleri (THEN) çalıştırır.
+        // 'this.gameObject' parametresi, Koşulların (Conditions) 
+        // bu nesneyi (contextOwner) kontrol edebilmesi için gereklidir.
+        TryExecuteActions(this.gameObject);
+    }
+
+    // ÖRNEK: Çarpışmayla tetikleme
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     // 'other.gameObject' parametresi, Koşulların (Conditions) 
+    //     // çarpan nesneyi (otherObject) kontrol edebilmesi için gereklidir.
+    //     TryExecuteActions(other.gameObject);
+    // }
+}

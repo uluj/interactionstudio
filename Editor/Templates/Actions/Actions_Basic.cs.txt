@@ -1,0 +1,34 @@
+using UnityEngine;
+using System.Collections; // Coroutine'ler için gerekli
+
+// --- TEMPLATE: ##SCRIPT_NAME## ---
+// Yeni GameAction'lar oluşturmak için temel şablon.
+// GameAction (Level 2) mimarisiyle uyumludur.
+
+[CreateAssetMenu(fileName = "Action_##SCRIPT_NAME##", menuName = "Interaction Studio/Actions/##SCRIPT_NAME##")]
+public class ##SCRIPT_NAME## : GameAction
+{
+    // TODO: Bu eylemin anlık mı (Instant) yoksa süreli mi (Coroutine) olduğunu belirle.
+    public override ActionType GetActionType()
+    {
+        return ActionType.Instant; // Varsayılan (Değiştirebilirsin)
+    }
+
+    // --- ANLIK EYLEMLER İÇİN (INSTANT) ---
+    // (Eğer GetActionType() -> ActionType.Instant ise burayı doldur)
+    public override void Execute(MonoBehaviour owner)
+    {
+        // TODO: Anlık eylem mantığını buraya yaz.
+        Debug.Log("Action ##SCRIPT_NAME## executed instantly.", owner);
+    }
+
+    // --- SÜRELİ EYLEMLER İÇİN (COROUTINE) ---
+    // (Eğer GetActionType() -> ActionType.Coroutine ise burayı doldur)
+    public override IEnumerator ExecuteCoroutine(MonoBehaviour owner)
+    {
+        // TODO: Süreli eylem mantığını buraya yaz.
+        Debug.Log("Action ##SCRIPT_NAME## Coroutine started.", owner);
+        yield return new WaitForSeconds(1.0f);
+        Debug.Log("Action ##SCRIPT_NAME## Coroutine finished.", owner);
+    }
+}
